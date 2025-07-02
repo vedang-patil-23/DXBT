@@ -22,6 +22,7 @@ dist-ssr
 
 # Sensitive directories - DO NOT COMMIT
 /public/documents/
+!/public/screenshots/  # Allow screenshots to be committed
 /dist/documents/
 *.local
 

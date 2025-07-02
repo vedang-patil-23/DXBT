@@ -133,5 +133,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built with ❤️ for travelers to Dubai
-- Special thanks to all the open-source libraries used in this project
+- Built with ❤️ by [Vedang Patil](https://github.com/vedang-patil-23) for personal use during my internship in Dubai (July 2025)
+- Created to help manage travel expenses and documents while abroad
+- Special thanks to all the open-source libraries that made this project possible
+- If you find this useful for your own travels, feel free to star the repository!

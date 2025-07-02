@@ -6,6 +6,14 @@
 
 A comprehensive travel expense tracker and document manager specifically designed for travelers to Dubai. Keep track of your expenses, manage travel documents, and monitor your budget in one place.
 
+## 🖥️ Screenshot
+
+<p align="center">
+  <img src="public/screenshots/homepage.png" alt="DXBT Homepage" width="800"/>
+  <br/>
+  <em>DXBT Dashboard - Your all-in-one travel companion for Dubai</em>
+</p>
+
 ## 🌟 Features
 
 - 💰 **Expense Tracking**: Log and categorize your travel expenses

@@ -1,0 +1,621 @@
+.dxbt-home-header.luxury-title {
+  padding-top: 3.5em;
+}
+
+body, html {
+  background: #fff;
+  color: #111;
+  font-family: 'Inter', 'Lato', 'Playfair Display', serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+#root, .dxbt-app-root {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+
+.dxbt-login-outer {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.dxbt-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.2rem;
+}
+.dxbt-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.1rem;
+  color: #A68E45;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 16px rgba(166,142,69,0.10);
+  margin-bottom: 0.2rem;
+}
+.dxbt-tagline {
+  font-family: 'Lato', serif;
+  color: #232323;
+  font-size: 1.08rem;
+  letter-spacing: 0.7px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  opacity: 0.78;
+}
+
+
+.dxbt-login-container {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(166,142,69,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-top: 8vh;
+  max-width: 340px;
+  width: 100%;
+}
+.dxbt-login-form h2 {
+  font-family: 'Playfair Display', serif;
+  color: #A68E45;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.dxbt-login-form input, .dxbt-moneyin-form input, .dxbt-moneyout-form input, .dxbt-moneyout-form select {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.3rem;
+  border-radius: 13px;
+  border: 1.5px solid #EFE8D2;
+  font-size: 1rem;
+  background: #F8F7F4;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Lato', 'Inter', sans-serif;
+}
+.dxbt-login-form input:focus, .dxbt-moneyin-form input:focus, .dxbt-moneyout-form input:focus, .dxbt-moneyout-form select:focus {
+  border: 1.5px solid #A68E45;
+  box-shadow: 0 0 0 2px #f6e7c2;
+}
+.dxbt-login-form input:first-of-type {
+  margin-top: 0.7rem;
+}
+.dxbt-login-form input:last-of-type {
+  margin-bottom: 1.7rem;
+}
+.dxbt-login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+}
+
+.dxbt-login-form input:focus {
+  border: 1.5px solid #A68E45;
+  outline: none;
+}
+.dxbt-login-form button, .dxbt-moneyin-form button, .dxbt-moneyout-form button {
+  width: 100%;
+  background: #fff;
+  color: #111;
+  border: none;
+  border-radius: 13px;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-top: 0.2rem;
+}
+.dxbt-login-form button:hover, .dxbt-moneyin-form button:hover, .dxbt-moneyout-form button:hover {
+  background: #f5f5f5;
+  color: #111;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.dxbt-dashboard-shell, .dxbt-router-shell {
+  width: 100vw;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 64px;
+}
+
+.dxbt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem 1rem 1.5rem 1rem;
+  background: transparent;
+}
+.dxbt-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #111;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+.dxbt-logout-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dxbt-logout-btn:hover {
+  background: #333;
+  color: #fff;
+}
+.dxbt-finance-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.dxbt-balance-summary {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 40px rgba(0,0,0,0.11);
+  padding: 2.2rem 2rem 1.4rem 2rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  border: none;
+}
+.dxbt-balance-summary h2 {
+  font-family: 'Arsenica', 'Playfair Display', serif;
+  color: #111;
+  font-size: 2.1rem;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  position: relative;
+}
+.dxbt-balance-summary h2::after {
+  content: '';
+  display: block;
+  margin: 0.65rem auto 0 auto;
+  width: 38px;
+  height: 3px;
+  border-radius: 2px;
+  background: #ccc;
+  opacity: 0.7;
+}
+.dxbt-balance-amount {
+  font-size: 2.3rem;
+  color: #111;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+.dxbt-conversion-rate {
+  color: #111;
+  font-size: 1.05rem;
+  margin-top: 0.1rem;
+}
+.dxbt-finance-cols {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dxbt-moneyin-section, .dxbt-moneyout-section {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.09);
+  padding: 1.7rem 1.1rem 1.3rem 1.1rem;
+  min-width: 250px;
+  max-width: 410px;
+  width: 100%;
+  margin-bottom: 1.1rem;
+  border: none;
+  position: relative;
+}
+.dxbt-moneyin-section h3, .dxbt-moneyout-section h3 {
+  font-family: 'Arsenica', 'Playfair Display', serif;
+  color: #111;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+.dxbt-moneyin-section h3::after, .dxbt-moneyout-section h3::after {
+  content: '';
+  display: block;
+  margin: 0.45rem auto 0 auto;
+  width: 28px;
+  height: 2.5px;
+  border-radius: 2px;
+  background: #ccc;
+  opacity: 0.7;
+}
+.dxbt-moneyin-form, .dxbt-moneyout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 1.2rem;
+}
+.dxbt-form-error {
+  color: #c0392b;
+  font-size: 0.97rem;
+  margin-bottom: 0.7rem;
+}
+.dxbt-moneyin-list, .dxbt-moneyout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+}
+.dxbt-moneyin-list li, .dxbt-moneyout-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 0.2rem;
+  border-bottom: 1px solid #f3efe2;
+  font-size: 1.05rem;
+}
+.dxbt-moneyin-source, .dxbt-moneyout-desc {
+  flex: 2;
+  font-weight: 600;
+  color: #111;
+}
+.dxbt-moneyin-amount, .dxbt-moneyout-amt {
+  flex: 1.3;
+  color: #111;
+  font-weight: 700;
+  text-align: right;
+  margin-left: 0.7rem;
+}
+.dxbt-moneyout-cat {
+  flex: 1;
+  color: #888;
+  font-size: 0.98rem;
+  margin-left: 0.5rem;
+}
+.dxbt-conv {
+  color: #888;
+  font-size: 0.97rem;
+  margin-left: 0.4rem;
+}
+.dxbt-remove-btn {
+  background: transparent;
+  border: none;
+  color: #c0392b;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.8rem;
+  transition: color 0.2s;
+}
+.dxbt-remove-btn:hover {
+  color: #111;
+}
+.dxbt-moneyin-total, .dxbt-moneyout-total {
+  font-weight: 700;
+  color: #111;
+  font-size: 1.09rem;
+  margin-top: 0.8rem;
+  text-align: right;
+}
+.dxbt-currency-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+@media (max-width: 900px) {
+  .dxbt-finance-cols {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
+}
+@media (max-width: 600px) {
+  .dxbt-app-root, .dxbt-dashboard-shell, .dxbt-finance-grid, .dxbt-finance-cols {
+    width: 100vw !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    align-items: center !important;
+  }
+  .dxbt-dashboard-shell {
+    padding: 0 0 2.5rem 0 !important;
+    background: #fff;
+  }
+  .dxbt-header {
+    width: 100vw !important;
+    text-align: center;
+    padding: 1.1rem 0 0.7rem 0;
+  }
+  .dxbt-header h1 {
+    font-size: 1.19rem !important;
+    line-height: 1.35;
+    font-family: 'Arsenica', 'Playfair Display', serif;
+    color: #111;
+    margin: 0 auto 0.2rem auto;
+    letter-spacing: 0.2px;
+    font-weight: 900;
+    text-align: center;
+  }
+  .dxbt-balance-summary {
+    padding: 1.15rem 0.2rem 0.7rem 0.2rem !important;
+    margin-bottom: 0.7rem !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: #fff;
+    text-align: center;
+  }
+  .dxbt-balance-summary h2 {
+    font-size: 1.32rem !important;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.2px;
+    font-family: 'Arsenica', 'Playfair Display', serif;
+  }
+  .dxbt-balance-summary h2::after {
+    width: 28px !important;
+    height: 2px !important;
+    margin-top: 0.28rem !important;
+  }
+  .dxbt-balance-amount {
+    font-size: 1.12rem !important;
+    font-weight: 700;
+  }
+  .dxbt-conversion-rate {
+    font-size: 0.93rem !important;
+  }
+  .dxbt-finance-cols {
+    flex-direction: column !important;
+    gap: 1.1rem !important;
+    width: 100vw !important;
+    align-items: center !important;
+  }
+  .dxbt-moneyin-section, .dxbt-moneyout-section {
+    padding: 1.1rem 0.4rem 1rem 0.4rem !important;
+    min-width: 0 !important;
+    max-width: 100vw !important;
+    width: 100vw !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 1.3rem !important;
+    background: #fff;
+    text-align: center;
+  }
+  .dxbt-moneyin-section h3, .dxbt-moneyout-section h3 {
+    font-size: 1.11rem !important;
+    font-family: 'Arsenica', 'Playfair Display', serif;
+    color: #111;
+    margin-bottom: 0.18rem;
+    letter-spacing: 0.1px;
+    font-weight: 800;
+    text-align: center;
+  }
+  .dxbt-moneyin-section h3::after, .dxbt-moneyout-section h3::after {
+    width: 22px !important;
+    height: 2px !important;
+    margin-top: 0.18rem !important;
+  }
+  .dxbt-moneyin-form input, .dxbt-moneyout-form input, .dxbt-moneyout-form select {
+    font-size: 1.02rem !important;
+    padding: 0.85rem 0.8rem !important;
+    border-radius: 11px !important;
+    margin-bottom: 1.1rem !important;
+    text-align: left;
+  }
+  .dxbt-moneyin-form button, .dxbt-moneyout-form button {
+    font-size: 1.03rem !important;
+    border-radius: 11px !important;
+    margin-top: 0.08rem !important;
+    width: 100%;
+    text-align: center;
+  }
+  .dxbt-moneyin-list li, .dxbt-moneyout-list li {
+    font-size: 0.98rem !important;
+    padding: 0.5rem 0.1rem !important;
+    text-align: left;
+  }
+  .dxbt-moneyin-section:last-child, .dxbt-moneyout-section:last-child {
+    margin-bottom: 2.3rem !important;
+  }
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+
+.dxbt-home-root {
+  background: #fff;
+  min-height: 100vh;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.dxbt-bg-watermark {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  font-size: 11vw;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: #ededed;
+  opacity: 0.22;
+  letter-spacing: 0.2em;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(2px) saturate(120%);
+  user-select: none;
+}
+.luxury-title span {
+  letter-spacing: 0.14em;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #181818;
+  text-shadow: 0 2px 18px rgba(0,0,0,0.06);
+  padding: 0.7rem 0 1.1rem 0;
+  display: inline-block;
+}
+.luxury-cards.luxury-grid-5 {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "min mout"
+    "mleft mleft"
+    "exr docs";
+  gap: 1.35rem 1.4rem;
+  width: 100vw;
+  max-width: 480px;
+  padding: 0 1.4rem;
+  justify-content: center;
+}
+.dxbt-home-card.money-in { grid-area: min; }
+.dxbt-home-card.money-out { grid-area: mout; }
+.dxbt-home-card.money-left { grid-area: mleft; }
+.dxbt-home-card.exchange-rate { grid-area: exr; }
+.dxbt-home-card.documents { grid-area: docs; }
+.luxury-card-large {
+  min-height: 128px !important;
+  font-size: 1.25rem;
+}
+.luxury-pill {
+  border-radius: 32px !important;
+  min-height: 80px !important;
+  font-size: 1.07rem;
+}
+@media (max-width: 700px) {
+  .luxury-cards.luxury-grid-5 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "min mout"
+      "mleft mleft"
+      "exr docs";
+    gap: 1.1rem 1rem;
+    padding: 0 0.5rem;
+    margin-top: 1.1rem;
+  }
+  .luxury-card-large {
+    min-height: 100px !important;
+  }
+}
+
+.dxbt-home-card-label {
+  font-size: 1.08rem;
+  font-family: 'Inter', 'Lato', 'Playfair Display', serif;
+  color: #232323;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.93;
+}
+
+.dxbt-home-card-value {
+  font-size: 1.30rem;
+  font-family: 'Playfair Display', serif;
+  color: #181818;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dxbt-home-card .dxbt-badge {
+  background: linear-gradient(90deg,#d4ffef 30%,#e0f7fa 100%);
+  color: #0f9d58;
+  font-size: 0.93rem;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 2px 9px;
+  margin-left: 0.4rem;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.05);
+  letter-spacing: 0.03em;
+}
+
+.dxbt-home-card {
+  background: rgba(255,255,255,0.65);
+  border: 1.5px solid rgba(220,220,220,0.55);
+  box-shadow: 0 8px 36px 0 rgba(0,0,0,0.14), 0 1.5px 0 0 rgba(0,0,0,0.03);
+  border-radius: 22px;
+  padding: 1.5rem 1.1rem 1.2rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  min-width: 0;
+  min-height: 100px;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.24s cubic-bezier(.5,1.8,.5,1), border 0.2s, transform 0.18s;
+  backdrop-filter: blur(4px) saturate(130%);
+  -webkit-backdrop-filter: blur(4px) saturate(130%);
+  animation: fadein-slideup 0.8s cubic-bezier(.5,1.8,.5,1);
+}
+.dxbt-home-card:hover, .dxbt-home-card:active {
+  border: 1.5px solid #181818;
+  box-shadow: 0 12px 42px 0 rgba(0,0,0,0.18), 0 1.5px 0 0 rgba(0,0,0,0.05);
+  transform: scale(1.035);
+  background: rgba(255,255,255,0.86);
+}
+@keyframes fadein-slideup {
+  from { opacity: 0; transform: translateY(40px) scale(0.93); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

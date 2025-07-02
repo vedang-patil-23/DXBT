@@ -1,0 +1,98 @@
+.dxbt-moneyin-table-outer {
+  margin: 0 auto 2em auto;
+  padding: 1.3em 1em 1.5em 1em;
+  border-radius: 22px;
+  box-shadow: 0 4px 40px rgba(166,142,69,0.10);
+  background: rgba(255,255,255,0.75);
+  max-width: 500px;
+  overflow-x: auto;
+}
+.dxbt-moneyin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-size: 1.08rem;
+  background: transparent;
+}
+.dxbt-moneyin-table th, .dxbt-moneyin-table td {
+  padding: 0.6em 1em;
+  border-bottom: 1.2px solid #eee;
+  text-align: left;
+}
+.dxbt-moneyin-table th {
+  font-weight: 700;
+  color: #A68E45;
+  font-family: 'Playfair Display', serif;
+  background: transparent;
+}
+.dxbt-moneyin-table td {
+  color: #232323;
+}
+.dxbt-certainty-pill {
+  display: inline-block;
+  padding: 0.22em 0.9em;
+  border-radius: 99em;
+  font-size: 0.98em;
+  background: #EFE8D2;
+  color: #A68E45;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+
+.dxbt-remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4em;
+  color: #A68E45;
+  cursor: pointer;
+  transition: color 0.18s;
+}
+.dxbt-remove-btn:hover {
+  color: #111;
+}
+.dxbt-add-btn {
+  background: #A68E45;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 0.5em 1.4em;
+  font-size: 1.07rem;
+  font-family: 'Lato', 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(166,142,69,0.07);
+  transition: background 0.18s, color 0.18s;
+}
+.dxbt-add-btn:hover {
+  background: #111;
+  color: #fff6e0;
+}
+.dxbt-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(34,34,34,0.18);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dxbt-modal {
+  background: #fff;
+  border-radius: 22px;
+  padding: 2.2em 2em 1.7em 2em;
+  box-shadow: 0 6px 38px rgba(166,142,69,0.13);
+  min-width: 310px;
+  max-width: 98vw;
+}
+@media (max-width: 600px) {
+  .dxbt-moneyin-table-outer {
+    padding: 0.7em 0.2em 1em 0.2em;
+    max-width: 99vw;
+  }
+  .dxbt-modal {
+    min-width: 90vw;
+    padding: 1.2em 0.6em 1em 0.6em;
+  }
+}

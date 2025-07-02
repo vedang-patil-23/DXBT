@@ -1,0 +1,26 @@
+.dxbt-piechart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  gap: 1.2em;
+}
+.dxbt-legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  border: 1.5px solid #bbb;
+}
+.dxbt-legend-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  color: #222;
+  max-width: 110px;
+  overflow-wrap: break-word;
+  vertical-align: middle;
+}

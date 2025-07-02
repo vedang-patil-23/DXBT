@@ -1,0 +1,183 @@
+.dxbt-moneyout-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2.5em 1em 3em 1em;
+  background: transparent;
+  color: #333; /* Default text color */
+}
+
+/* Mobile-first styles */
+@media (max-width: 768px) {
+  .dxbt-moneyout-section {
+    padding: 1.5em 0.8em 2em;
+  }
+  
+  .dxbt-moneyout-table-wrapper {
+    padding: 1em 0.5em;
+    margin: 0 0.5em 1.5em;
+    border-radius: 16px;
+  }
+  
+  .dxbt-moneyout-table {
+    font-size: 0.95rem;
+  }
+  
+  .dxbt-moneyout-table th,
+  .dxbt-moneyout-table td {
+    padding: 0.5em 0.6em;
+  }
+  
+  .dxbt-moneyout-total {
+    padding: 0.8em 1.2em;
+    margin: 1.5em auto 0;
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  
+  /* Ensure text is visible on all backgrounds */
+  .dxbt-moneyout-table th,
+  .dxbt-moneyout-table td,
+  .dxbt-moneyout-total,
+  .dxbt-moneyout-total span,
+  .dxbt-moneyout-total strong,
+  .dxbt-moneyout-total b {
+    color: #333 !important;
+  }
+  
+  /* Form elements */
+  .dxbt-moneyout-form input,
+  .dxbt-moneyout-form select,
+  .dxbt-moneyout-form button {
+    color: #333;
+    background: #fff;
+  }
+  
+  .dxbt-moneyout-form input::placeholder {
+    color: #666;
+    opacity: 1;
+  }
+}
+
+.dxbt-moneyout-table-wrapper {
+  margin: 0 auto 2em auto;
+  padding: 1.3em 1em 1.5em 1em;
+  border-radius: 22px;
+  box-shadow: 0 4px 40px rgba(166,142,69,0.10);
+  background: rgba(255,255,255,0.85);
+  max-width: 500px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  color: #333; /* Ensure text color */
+}
+
+.dxbt-moneyout-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-size: 1.08rem;
+  background: transparent;
+}
+
+.dxbt-moneyout-table th, .dxbt-moneyout-table td {
+  padding: 0.6em 1em;
+  border-bottom: 1.2px solid #eee;
+  text-align: left;
+}
+.dxbt-moneyout-table th {
+  font-weight: 700;
+  color: #A68E45;
+  font-family: 'Playfair Display', serif;
+  background: transparent;
+}
+.dxbt-moneyout-table td {
+  color: #232323;
+}
+.dxbt-remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4em;
+  color: #A68E45;
+  cursor: pointer;
+  transition: color 0.18s;
+}
+.dxbt-remove-btn:hover {
+  color: #111;
+}
+.dxbt-add-btn {
+  background: #A68E45;
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin: 1.2em auto 0 auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(166,142,69,0.13);
+}
+.dxbt-add-btn:hover, .dxbt-add-btn:focus {
+  background: #8d7737;
+  box-shadow: 0 4px 16px rgba(166,142,69,0.18);
+}
+.dxbt-add-btn:active {
+  background: #7c6a2e;
+}
+.dxbt-moneyout-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  background: #F8F7F4;
+  border: 1.5px solid #E5C97B;
+  box-shadow: 0 2px 16px rgba(166,142,69,0.10);
+  border-radius: 1.8em;
+  padding: 1.1em 2em;
+  margin: 2.2em auto 0 auto;
+  max-width: 340px;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-size: 1.18rem;
+  color: #A68E45;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: box-shadow 0.18s;
+}
+.dxbt-moneyout-total span {
+  font-size: 1.09em;
+  font-weight: 700;
+  color: #A68E45;
+  margin-right: 0.5em;
+  font-family: 'Playfair Display', serif;
+}
+.dxbt-moneyout-total strong, .dxbt-moneyout-total b {
+  font-size: 1.19em;
+  font-weight: 700;
+  color: #A68E45;
+}
+@media (max-width: 600px) {
+  .dxbt-moneyout-section {
+    margin: 0.7em 0.7em 2em 0.7em;
+    padding: 2em 0.7em 2.5em 0.7em;
+    box-sizing: border-box;
+    max-width: 98vw;
+  }
+  .dxbt-moneyout-table-wrapper {
+    padding: 0.7em 0.3em 1em 0.3em;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  .dxbt-moneyout-total {
+    padding: 0.8em 0.7em;
+    font-size: 1.07rem;
+    max-width: 99vw;
+  }
+}
+
+.dxbt-form-error {
+  color: #b91c1c;
+  margin-bottom: 0.7em;
+  font-size: 0.98rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.2px;
+}

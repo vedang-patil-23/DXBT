@@ -26,7 +26,7 @@ A comprehensive travel expense tracker and document manager specifically designe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/dxbt.git
+   git clone https://github.com/vedang-patil-23/dxbt.git
    cd dxbt
    ```
 
@@ -80,7 +80,33 @@ VITE_API_BASE_URL=your_api_base_url
    - Check the dashboard for expense breakdowns and visualizations
    
 4. **Manage Documents**:
-   - Upload and access important travel documents
+   - Store important travel documents like:
+     - Passport copies
+     - Visa documents
+     - Hotel reservations
+     - Flight tickets
+     - Travel insurance
+     - Emergency contacts
+   - Documents are stored locally in your browser for privacy
+   - For security, sensitive documents are not uploaded to any external server
+
+### 📁 How to Add Documents
+
+1. Click on the "Documents" tab in the navigation menu
+2. Click the "Upload Document" button
+3. Select the file from your device
+4. Add a descriptive name and category (e.g., "Passport", "Visa", "Hotel")
+5. Click "Save" to store the document
+
+### 🔒 Document Storage Location
+- Documents are stored in the `public/documents/` directory
+- This directory is included in `.gitignore` for security
+- For production, consider implementing secure cloud storage
+
+### ⚠️ Important Notes
+- Always keep backups of important documents
+- The application uses local storage - documents will be lost if you clear browser data
+- For sensitive documents, consider using encrypted storage
 
 ## 📱 Technologies Used
 
